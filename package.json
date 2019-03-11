@@ -1,0 +1,14 @@
+{
+	"name": "mapanythingchallenge",
+	"version": "1.0.0",
+	"description": "Coding Challenge for MapAnything interview",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Krista Prenesti",
+	"license": "ISC",
+	"devDependencies": {
+		"eslint": "^5.15.1"
+	}
+}

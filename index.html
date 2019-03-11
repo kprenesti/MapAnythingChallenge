@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Krista Prenesti's Answer to MapAnything Challenge</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<script
+			async
+			defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGiw17JGP6VojexIX6uZGPaX211XG1uG0"
+		></script>
+		<script type="module" async defer src="./app.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>MapAnything Coding Challenge</h1>
+			<h2>Krista Prenesti's Coding Challenge</h2>
+			<p><strong>Cell:</strong> 770-377-3514 | <strong>Email:</strong> kprenesti@gmail.com</p>
+		</header>
+		<div class="container">
+			<div class="legend">
+				<div class="directionRow headerRow">
+					<div class="col1 col"><strong>Hide</strong></div>
+					<div class="col2 col"><strong>Color</strong></div>
+					<div class="col3 col"><strong>Quadrant</strong></div>
+					<div class="col4 col"><strong>Count</strong></div>
+				</div>
+				<div class="directionRow">
+					<div class="col col1">
+						<input class="checkbox" type="checkbox" name="NorthwestToggle" id="NorthwestToggle" />
+					</div>
+					<div class="col col2">
+						<div class="color Northwest"></div>
+					</div>
+					<div class="col col3">
+						<span class="name col col3">Northwest</span>
+					</div>
+					<div class="col col4">
+						<span class="count" id="NorthwestCount"></span>
+					</div>
+				</div>
+				<div class="directionRow">
+					<div class="col col1">
+						<input class="checkbox" type="checkbox" name="NortheastToggle" id="NortheastToggle" />
+					</div>
+					<div class="col col2">
+						<div class="Northeast color"></div>
+					</div>
+					<div class="col col3">
+						<span class="name">Northeast</span>
+					</div>
+					<div class="col col4">
+						<span class="count" id="NortheastCount"></span>
+					</div>
+				</div>
+				<div class="directionRow">
+					<div class="col col1">
+						<input class="checkbox" type="checkbox" name="SouthwestToggle" id="SouthwestToggle" />
+					</div>
+					<div class="col col2">
+						<div class="Southwest color"></div>
+					</div>
+					<div class="col col3">
+						<span class="name">Southwest</span>
+					</div>
+					<div class="col col4">
+						<span class="count" id="SouthwestCount"></span>
+					</div>
+				</div>
+				<div class="directionRow">
+					<div class="col col1">
+						<input class="checkbox" type="checkbox" name="SoutheastToggle" id="SoutheastToggle" />
+					</div>
+					<div class="col col2">
+						<div class="Southeast color"></div>
+					</div>
+					<div class="col col3">
+						<span class="name">Southeast</span>
+					</div>
+					<div class="col col4">
+						<span class="count" id="SoutheastCount"></span>
+					</div>
+				</div>
+				<button onclick="reset()">Refresh Results</button>
+			</div>
+			<div class="map" id="map"></div>
+		</div>
+	</body>
+</html>
